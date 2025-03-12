@@ -4,25 +4,10 @@
   "libraries": [
     {
       "text": "Blocks",
-      "paths": ["https://main--milo--adobecom.aem.page/docs/library/blocks.json"]
+      "paths": ["https://main--milo--adobecom.hlx.page/docs/library/blocks.json"]
     }
   ],
   "plugins": [
-    {
-      "id": "publish",
-      "confirm": true
-    },
-    {
-      "id": "path",
-      "title": "Path",
-      "environments": [ "edit" ],
-      "url": "/tools/path-finder",
-      "isPalette": true,
-      "passReferrer": true,
-      "passConfig": true,
-      "paletteRect": "top: 50%; left: 50%; transform: translate(-50%,-50%); height: 84px; width: 900px; overflow: hidden; border-radius: 6px; box-shadow: 0 20px 35px 0px rgba(0, 0, 0, 0.5);",
-      "includePaths": [ "**.docx**", "**.xlsx**" ]
-    },
     {
       "id": "library",
       "title": "Library",
@@ -52,7 +37,7 @@
       "id": "localize-v2",
       "title": "Localize project (V2)",
       "environments": [ "edit" ],
-      "url": "https://locui--milo--adobecom.aem.page/tools/loc",
+      "url": "https://locui--milo--adobecom.hlx.page/tools/loc",
       "passReferrer": true,
       "passConfig": true,
       "excludePaths": [ "/**" ],
@@ -169,18 +154,6 @@
       "url": "https://milo.adobe.com/tools/faas",
       "isPalette": false,
       "includePaths": [ "**.docx**"]
-    },
-    {
-      "containerId": "tools",
-      "id": "rollout",
-      "title": "Rollout",
-      "environments": [ "preview" ],
-      "isPalette": true,
-      "passReferrer": true,
-      "passConfig": true,
-      "url": "/tools/rollout?overrideBranch=milostudio",
-      "includePaths": [ "**.docx**", "**.xlsx**" ],
-      "paletteRect": "top: 40%; left: 50%; transform: translate(-50%,-50%); height: 350px; width: 500px; overflow: hidden; border-radius: 15px; box-shadow: 0 20px 35px 0px rgba(0, 0, 0, 0.5);"
     }
   ]
 }
